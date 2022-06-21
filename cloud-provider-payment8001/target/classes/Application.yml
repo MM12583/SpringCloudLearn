@@ -11,5 +11,5 @@ spring:
     password: mm12583
 
 mybatis:
- mapper-locations: classpath:mapper/*.xml
+ mapper-locations: classpath:mapper/*.xml #resource下路徑
  type-aliases-package: com.frank.springcloud.entities #所有Entity所在package
