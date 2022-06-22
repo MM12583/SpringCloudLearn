@@ -35,7 +35,7 @@ public class PaymentController {
 		Payment payment = paymentService.getPaymentById(id);
 		log.info("Get result : " + payment);
 
-		return null == payment ? new CommonResult(200, "Get Success", payment) : new CommonResult(404, "Get Failed", null);
+		return null == payment ? new CommonResult(404, "Get Failed", null) : new CommonResult(200, "Get Success", payment);
 	}
 }
 

@@ -2,6 +2,9 @@ package com.frank.springcloud.entities;
 
 import java.io.Serializable;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+@EntityScan
 public class Payment implements Serializable{
 	
 	private Long id; // BigInt in sql
