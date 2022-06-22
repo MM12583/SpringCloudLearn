@@ -16,21 +16,21 @@ CREATE DATABASE /*!32312 IF NOT EXISTS*/`springcloudlearn` /*!40100 DEFAULT CHAR
 
 USE `springcloudlearn`;
 
-/*Table structure for table `payment` */
+/* Procedure structure for procedure `insert_payment_data` */
 
-DROP TABLE IF EXISTS `payment`;
+/*!50003 DROP PROCEDURE IF EXISTS  `insert_payment_data` */;
 
-CREATE TABLE `payment` (
-  `id` bigint NOT NULL AUTO_INCREMENT COMMENT 'ID',
-  `serial` varchar(200) DEFAULT '',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+DELIMITER $$
 
-/*Data for the table `payment` */
-
-LOCK TABLES `payment` WRITE;
-
-UNLOCK TABLES;
+/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `insert_payment_data`(IN n int)
+BEGIN  
+  DECLARE i INT DEFAULT 1;
+    WHILE (i <= n ) DO
+      INSERT into payment_memory VALUEs (i, rand_serial());
+            set i=i+1;
+    END WHILE;
+END */$$
+DELIMITER ;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
