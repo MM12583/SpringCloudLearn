@@ -12,4 +12,4 @@ spring:
 
 mybatis:
  mapper-locations: classpath:mapper/*.xml #resource下路徑
- type-aliases-package: com.frank.springcloud.entities #所有Entity所在package
+ type-aliases-package: com.frank.springcloud.payment8001.entities #所有Entity所在package

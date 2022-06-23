@@ -1,0 +1,7 @@
+server:
+  port: 80 # 客戶端慣用port URL可不寫
+spring:     
+  autoconfigure: 
+    exclude: # Client 不自動連接資料庫
+      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+      - org.springframework.boot.autoconfigure.mail.MailSenderAutoConfiguration
