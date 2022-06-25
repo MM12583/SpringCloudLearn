@@ -1,4 +1,4 @@
-package com.frank.springcloud.order80.entities;
+package com.frank.springcloud.commonsapi.entities;
 
 import java.io.Serializable;
 

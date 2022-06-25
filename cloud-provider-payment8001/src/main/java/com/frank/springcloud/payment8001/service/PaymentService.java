@@ -2,7 +2,7 @@ package com.frank.springcloud.payment8001.service;
 
 import org.apache.ibatis.annotations.Param;
 
-import com.frank.springcloud.payment8001.entities.Payment;
+import com.frank.springcloud.commonsapi.entities.Payment;
 
 public interface PaymentService {
 	

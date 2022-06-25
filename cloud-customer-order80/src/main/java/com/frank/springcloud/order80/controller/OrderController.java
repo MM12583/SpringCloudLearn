@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
-import com.frank.springcloud.order80.entities.CommonResult;
-import com.frank.springcloud.order80.entities.Payment;
+import com.frank.springcloud.commonsapi.entities.CommonResult;
+import com.frank.springcloud.commonsapi.entities.Payment;
 
 @RestController
 public class OrderController {

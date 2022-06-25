@@ -55,7 +55,6 @@
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<version>1.18.22</version>
 			<scope>provided</scope>
 		</dependency>
 
@@ -71,7 +70,13 @@
 			<optional>true</optional>
 			<scope>provided</scope><!--部署時將不會打包到jar/war裡面;因此工具建議用於Local開發使用。 -->
 		</dependency>
-
+		
+<!-- 		引入自己定義的api 通用包 -->
+		<dependency> 
+			<groupId>com.frank.springcloud</groupId>
+			<artifactId>cloud-commons-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
 
 	</dependencies>
 </project>

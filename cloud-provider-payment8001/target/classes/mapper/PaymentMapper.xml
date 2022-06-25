@@ -7,12 +7,13 @@
 		INSERT INTO PAYMENT (serial) VALUES (#{serial});
 	</insert>
 	
-	<resultMap type="com.frank.springcloud.payment8001.entities.Payment" id="BaseResultMap">
+<!-- 	已刪除改為共用地 -->
+<!-- 	<resultMap type="com.frank.springcloud.payment8001.entities.Payment" id="BaseResultMap">  -->
+	<resultMap type="com.frank.springcloud.commonsapi.entities.Payment" id="BaseResultMap">
 		<id column="id" property="id" jdbcType="BIGINT"/>
 		<id column="serial" property="serial" jdbcType="VARCHAR"/>
 	</resultMap>
 	<select id="getPaymentById" parameterType="Long" resultMap="BaseResultMap">
 		SELECT * FROM PAYMENT WHERE ID = #{id};
 	</select>
-	
 </mapper>

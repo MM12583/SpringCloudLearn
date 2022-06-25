@@ -4,7 +4,7 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
-import com.frank.springcloud.payment8001.entities.Payment;
+import com.frank.springcloud.commonsapi.entities.Payment;
 
 // mapper 不為SpringBean,須加Repository 才可Autowired, 否則用Resource
 @Repository

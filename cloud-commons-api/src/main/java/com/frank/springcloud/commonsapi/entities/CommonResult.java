@@ -1,7 +1,7 @@
-package com.frank.springcloud.payment8001.entities;
+package com.frank.springcloud.commonsapi.entities;
 
 public class CommonResult<T> {
-
+	
 	private Integer code; // http status 200、404...
 
 	private String message;
