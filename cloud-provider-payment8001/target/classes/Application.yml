@@ -14,3 +14,16 @@ mybatis:
  mapper-locations: classpath:mapper/*.xml #resource下路徑
 # type-aliases-package: com.frank.springcloud.payment8001.entities #所有Entity所在package 已刪除改為共用地
  type-aliases-package: com.frank.springcloud.commonsapi.entities #所有Entity所在package
+ 
+ 
+eureka:
+  # 向註冊中心註冊自己
+  client:
+    register-with-eureka: true 
+    
+    # 從 Eureka Server 取已有註冊訊息(default true)，集群須為 true 才可使用附載均衡
+    fetch-registry: true 
+    service-url:
+      defaultZone:  http://localhost:7001/eureka/
+    
+    
