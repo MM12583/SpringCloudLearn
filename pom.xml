@@ -2,6 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.frank.springcloud</groupId>
@@ -20,6 +21,15 @@
 			<url>scp://webhost.company.com/www/website</url>
 		</site>
 	</distributionManagement>
+	
+	<!-- 模塊 -->
+	<modules>
+		<module>cloud-provider-payment8001</module>
+		<module>cloud-customer-order80</module>
+		<module>cloud-commons-api</module>
+		<module>cloud-eureka-server7001</module>
+		<module>cloud-eureka-server7002</module>
+	</modules>
 
 	<!-- 統一管理jar版本 -->
 	<properties>
@@ -165,12 +175,5 @@
 			</plugin>
 		</plugins>
 	</reporting>
-
-	<!-- 模塊 -->
-	<modules>
-		<module>cloud-provider-payment8001</module>
-		<module>cloud-customer-order80</module>
-		<module>cloud-commons-api</module>
-		<module>cloud-eureka-server7001</module>
-	</modules>
+	
 </project>
