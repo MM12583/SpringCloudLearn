@@ -4,6 +4,9 @@ server:
 eureka:
   instance:    # hostname: localhost
     hostname: eureka7001.com # 多台Server 以改過host文件
+  server: 
+    #server各node間連接時間限制 (超過會認為此節點不可用)
+    peer-node-connect-timeout-ms: 40000
   client:
     register-with-eureka: false # 不向註冊中心註冊自己
     fetch-registry: false # false 表自己是註冊中心，維護實例，不需要檢索服務
@@ -11,4 +14,4 @@ eureka:
     # defaultZone:  http://${eureka.instance.hostname}:${server.port}/eureka/
       
       # 相互守望找到另一台守望Server (3台以上 url ',' 隔開)
-      defaultZone:  http://eureka7002.com:7002 
+      defaultZone:  http://eureka7002.com:7002/eureka

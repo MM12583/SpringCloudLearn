@@ -16,7 +16,8 @@ public class OrderController {
 	private static final Logger log = 
 			org.slf4j.LoggerFactory.getLogger(OrderController.class);
 	
-	public static final String PAYMENTURL = "http://localhost:8001";
+//	public static final String PAYMENTURL = "http://localhost:8001"; 
+	public static final String PAYMENTURL = "http://CLOUD-PAYMENT-SERVICE"; // 集群版寫服務名稱
 	
 	@Autowired
 	private RestTemplate restTemplate;
